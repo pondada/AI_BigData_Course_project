@@ -1,1 +1,8 @@
-# AI_BigData_Course_project
+# AI_BigData_Course_project 食譜底呷啦
+
+## 【簡介】
++ 提供使用者可紀錄食材庫存的 LineBot 平台，亦可透過庫存資料或輸入關鍵字，推薦相關食譜給使用者
+  + 使用者可透過 LineBot 上傳食材照片進行庫存管理
+  + 深度學習影像辨識模型，辨識使用者上傳的食材照片
+  + 利用 Flask、Ngrok 架設 LineBot 伺服器，達成與使用者互動
+  + 使用 K-Means 進行食譜分群，並搭配相似度演算法，建置個人化食譜推薦系統
