@@ -23,14 +23,14 @@ import re
 
 
 app = Flask(__name__)
-line_bot_api = LineBotApi('Dlow55NwMhUOqXBgYlZuekbQ9nvZLJd/M7SR1SNIDN/t/hYYD8kV1hILjwb2irfVRZTGiBzdquXcdNPTe8uBHXUe1yl1qB6tTOpv/u+CPsx58YwuGEM1yRkqyS98beU5DAUhjACw5R+vSizOV4UorwdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('1ee56998faf23a84ff21c58a9e829d02')
+line_bot_api = LineBotApi('line_channel_access_token')
+handler = WebhookHandler('WebhookHandler')
 image_tmp_path = os.path.join(os.getcwd(), 'static').replace('\\','/')
 
 connect = pymysql.connect(
                 host="127.0.0.1",
-                user="spark",
-                passwd="1qaz@wsX",
+                user="user",
+                passwd="password",
                 port=3306,
                 database="recipe_db",
                 charset='utf8mb4',
