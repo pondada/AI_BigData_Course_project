@@ -5,8 +5,8 @@ import tempfile, os, random, string
 def check_recipe_ingredient(dishid,uuid):
 
     connection = pymysql.connect(host='localhost',
-                             user='spark',
-                             password='1qaz@wsX',
+                             user='user',
+                             password='password',
                              database='recipe_db',
                              port=3306,
                              cursorclass=pymysql.cursors.DictCursor)
@@ -59,4 +59,4 @@ def check_recipe_ingredient(dishid,uuid):
 
 
 if __name__ == '__main__' :
-    print(check_recipe_ingredient(13962,'U7e21d301d0c71ced924939c2546462c2'))
+    print(check_recipe_ingredient(13962,'user_id'))
