@@ -4,8 +4,8 @@ import pymysql.cursors
 def check_inventory(uuid):
 
     connection = pymysql.connect(host='localhost',
-                             user='spark',
-                             password='1qaz@wsX',
+                             user='user',
+                             password='password',
                              database='recipe_db',
                              port=3306,
                              cursorclass=pymysql.cursors.DictCursor)
@@ -27,4 +27,4 @@ def check_inventory(uuid):
     return ingredientlist
 
 if __name__ == '__main__':
-    check_inventory('U7e21d301d0c71ced924939c2546462c2')
+    check_inventory('user_id')
