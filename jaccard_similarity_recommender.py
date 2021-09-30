@@ -12,8 +12,8 @@ def connectDb(dbName):
     db_settings = {
     "host": "127.0.0.1",
     "port": 3306,
-    "user": "spark",
-    "password": "1qaz@wsX",
+    "user": "user",
+    "password": "password",
     "db": dbName,
     "charset": "utf8"
     }
